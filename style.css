@@ -1,0 +1,131 @@
+/* Variable */
+:root {
+    /* ### Primary */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    color: hsla(360, 100%, 100%, 1);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: auto;
+    max-width: 100%;
+    width: 1200px;
+
+}
+
+.flex {
+    display: flex;
+    margin: 50px 0;
+
+}
+
+.card {
+    margin: 70px;
+    order: 1;
+
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    padding-top: 10px;
+    opacity: 0.8;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: hsla(360, 100%, 100%, 1);
+    color: var(--Violet);
+    font-size: 1.5rem;
+    margin: 50px;
+    padding: 10px 40px ;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0px 2px 4px hsl(0, 100%, 2%);
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    background-color: var(--Soft-Magenta);
+    color:hsla(360, 100%, 100%, 1);
+}
+
+.media {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.media a {
+    color: hsla(360, 100%, 100%, 1);
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.media a:hover {
+    background-color: var(--Soft-Magenta);
+    color:hsla(360, 100%, 100%, 1);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(220, 10%, 94%); 
+    font-weight: bolder
+}
+
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0; 
+    }
+
+    p {
+        margin-top: 40px;
+        justify-items: center;
+    }
+    
+    .btn {
+        margin-top: 80px;
+    }
+}
